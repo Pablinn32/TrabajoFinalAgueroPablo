@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <title> MinningSL </title>
+</head>
+<body>
+<header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="page2.html">Contacto</a></li>
+        </ul>
+    </nav>
+    <div class="title">
+        <h1>MinningSL</h1>
+    </div>
+</header>
+<main>
+    <section>
+        <article class="formulario">
+            <h2>Dudas? consultas?! no  dudes en contactarnos</h2>
+        <form>
+            <fieldset>
+                    <br>
+                        <label for="nombre_apellido">Nombre:</label>
+                        <input type="text"name="nombre_apellido" placeholder="Ingrese su nombre aqui">
+                    <br>
+                        <label for="Email">Email:</label>
+                        <input type="text"name="Email" placeholder="Ingrese su Email aqui">
+                    <br>
+                        <div>tengo experiencia en hardware </div>
+                        <input type="radio"name="tipo" value="no tengo rig">
+                        <div>No tengo experiencia </div>
+                        <input type="radio"name="tipo" value="ya tengo rig">
+                    <br>
+                        <legend></legend>
+                        <select name="" talles="">
+                            <option>Nos contactas por?</option>
+                            <option value="Consulta">consultas</option>
+                            <option value="Reclamo">reclamos</option>
+                            <option value="Otro">otro</option>
+                        </select>
+                    <br>
+                        <div>Acepta terminos y condiciones</div>
+                        <input type="checkbox" name="acepta" value="1">
+                    <br>
+                        <input type="submit" value="enviar formulario">
+                        <input type="reset" value="Limpiar formulario">
+                        <input type="button" value="sin acciones">
+                    
+                    <br>
+                </fieldset>
+        </form>
+
+        <li>Google Maps:  <a target="_blank" href="https://www.google.com.ar/maps">Ubicacion</a></li>
+        </article>
+    </section>
+</main>
+    <footer>
+        <p>siguenos en nuestras redes sociales</p>
+        <div class="footer-img">
+            <img src="./img/prod2.png" alt="">
+            <img src="./img/prod2.png" alt="">
+            <img src="./img/prod2.png" alt="">
+        </div>
+    </footer>
+</body>
+</html>
