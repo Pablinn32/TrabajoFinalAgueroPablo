@@ -33,8 +33,7 @@ header div h1{
     justify-content: center;
     align-items: center;
     background-image: url("./imgcryptos/fondo3.jpg");
-    background-size: contain;
-    background-position: center;
+    background-size:cover;
     color:rgb(214, 18, 18);
     font-size: 200px;
     font-family:'sans-serif';
@@ -49,37 +48,37 @@ header div h1{
     100%{
         opacity: 1;
     }
-    
 }
+
 section .rigs{
     text-align: center;
     display: grid;
     grid-template-areas: 
     "a a a"
-    "b c d"
-    ;
+    "b c d";
 }
-.rigs h2 {
-    grid-area: a;
-    text-align: center;
-    color: cyan;
-    text-decoration: none;
-    font-family:Arial;
-    font-size: 20px;
-}
-.rigs-img {
- display: flex;
- justify-content: space-between;
-}
-.rigs-img:nth-child(1){
-     grid-area: b ;
-}
-.rigs-img:nth-child(2){
-    grid-area: c ;
-}
-.rigs-img:nth-child(3){
-    grid-area: d ;
-}
+        section h2{
+            grid-area: a;
+            text-align: center;
+            color: cyan;
+            text-decoration: none;
+            font-family:Arial;
+            font-size: 20px;
+        }
+        .rigs-img {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        .rigs-img:nth-child(1){
+            grid-area: b ;
+        }
+        .rigs-img:nth-child(2){
+            grid-area: c ;
+        }
+        .rigs-img:nth-child(3){
+            grid-area: d ;
+        }
 
 section .acc{
     text-align: center;
@@ -89,27 +88,28 @@ section .acc{
     "b c d"
     ;
 }
-.acc h2 {
-    grid-area: a;
-    text-align: center;
-    color: cyan;
-    text-decoration: none;
-    font-family:Arial;
-    font-size: 20px;
-}
-.acc-img {
- display: flex;
- justify-content: space-between;
-}
-.acc-img:nth-child(1){
-     grid-area: b ;
-}
-.acc-img:nth-child(2){
-    grid-area: c ;
-}
-.acc-img:nth-child(3){
-    grid-area: d ;
-}
+        section h2 {
+            grid-area: a;
+            text-align: center;
+            color: cyan;
+            text-decoration: none;
+            font-family:Arial;
+            font-size: 20px;
+        }
+        .acc-img {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        .acc-img:nth-child(1){
+            grid-area: b ;
+        }
+        .acc-img:nth-child(2){
+            grid-area: c ;
+        }
+        .acc-img:nth-child(3){
+            grid-area: d ;
+        }
 section .soft{
     text-align: center;
     display: grid;
@@ -118,26 +118,27 @@ section .soft{
     "b c d"
     ;
 }
-.soft h2 {
-    grid-area: a;
-    text-align: center;
-    color: cyan;
-    text-decoration: none;
-    font-family:Arial;
-    font-size: 20px;
-}
-.soft-img {
- display: flex;
- justify-content: space-between;
-}
-.soft-img:nth-child(1){
-     grid-area: b ;
-}
-.soft-img:nth-child(2){
-    grid-area: c ;
-}
-.soft-img:nth-child(3){
-    grid-area: d ;
+        .section h2 {
+            grid-area: a;
+            text-align: center;
+            color: cyan;
+            text-decoration: none;
+            font-family:Arial;
+            font-size: 20px;
+        }
+        .soft-img {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        .soft-img:nth-child(1){
+            grid-area: b ;
+        }
+        .soft-img:nth-child(2){
+            grid-area: c ;
+        }
+        .soft-img:nth-child(3){
+            grid-area: d ;
 }
 /*footer*/
 footer {
@@ -170,9 +171,119 @@ footer .footer-img img{
     font-family:Arial;
     font-size: 20px;
 }
+                                                /*responsive - mobile */
 
- 
 
-
+@media screen and (max-width:768px){
+    *{
+        margin: 0;
+        padding: 0;
+    }
     
+    header nav ul {
+        justify-content: center;
+       
+    }
+    header div h1{
+        font-size: 100px;
+    }
+    section .rigs{
+        text-align: center;
+        display: grid;
+        grid-template-areas: 
+        "a a a"
+        "b c d";
+        justify-items: center;
+    }
+            section h2{
+                grid-area: a;
+                color: cyan;
+                text-decoration: none;
+                font-family:Arial;
+                font-size: 20px;
+            }
+            .rigs-img {
+                display: flex;
+                flex-direction: column;
+                height: 50%;
+                width: 50%;
+            }
+            .rigs-img:nth-child(1){
+                grid-area: b ;
+            }
+            .rigs-img:nth-child(2){
+                grid-area: c ;
+            }
+            .rigs-img:nth-child(3){
+                grid-area: d ;
+            }
+    
+    section .acc{
+        text-align: center;
+        display: grid;
+        grid-template-areas: 
+        "a a a"
+        "b c d"
+        ;
+        justify-items: center;
 
+    }
+            section h2 {
+                grid-area: a;
+                text-align: center;
+                color: cyan;
+                text-decoration: none;
+                font-family:Arial;
+                font-size: 20px;
+            
+            }
+            .acc-img {
+                display: flex;
+                flex-direction: column;
+                
+                height: 50%;
+                width: 50%;
+                
+            }
+            .acc-img:nth-child(1){
+                grid-area: b ;
+            }
+            .acc-img:nth-child(2){
+                grid-area: c ;
+            }
+            .acc-img:nth-child(3){
+                grid-area: d ;
+            }
+    section .soft{
+        text-align: center;
+        display: grid;
+        grid-template-areas: 
+        "a a a"
+        "b c d"
+        ;
+        justify-items: center;
+    }
+            section h2 {
+                grid-area: a;
+                text-align: center;
+                color: cyan;
+                text-decoration: none;
+                font-family:Arial;
+                font-size: 20px;
+            }
+            .soft-img {
+                display: flex;
+                flex-direction: column;
+                height: 50%;
+                width: 50%;
+            }
+            .soft-img:nth-child(1){
+                grid-area: b ;
+            }
+            .soft-img:nth-child(2){
+                grid-area: c ;
+            }
+            .soft-img:nth-child(3){
+                grid-area: d ;
+    }
+}
