@@ -3,22 +3,12 @@
     padding: 0;
 }
 body{
-    background-color: black;
+    background-color:black;
 }
 header nav {
     height: 60px;
 }
-header nav ul{
-
-    display: grid;
-    grid-template-areas:
-     "a b";
-     justify-content: end;
-     column-gap: 40px;
-     margin-right: 40px;
-     padding-top: 20px;
-}
-header nav ul li a{
+.nav-item a{
     list-style-type: none;
     color: cyan;
     text-decoration: none;
@@ -56,8 +46,9 @@ section .rigs{
     grid-template-areas: 
     "a a a"
     "b c d";
+    margin-left: 20px;
 }
-        section h2{
+        section {
             grid-area: a;
             text-align: center;
             color: cyan;
@@ -87,8 +78,9 @@ section .acc{
     "a a a"
     "b c d"
     ;
+    margin-left: 20px;
 }
-        section h2 {
+        section  {
             grid-area: a;
             text-align: center;
             color: cyan;
@@ -117,8 +109,9 @@ section .soft{
     "a a a"
     "b c d"
     ;
+    margin-left: 20px;
 }
-        .section h2 {
+        .section  {
             grid-area: a;
             text-align: center;
             color: cyan;
@@ -262,6 +255,7 @@ footer .footer-img img{
         "b c d"
         ;
         justify-items: center;
+    
     }
             section h2 {
                 grid-area: a;
